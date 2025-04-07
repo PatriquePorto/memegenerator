@@ -2,7 +2,7 @@
 
 ## Overview
 
-Gerador de Memes Aleatórios is a web application that allows users to create and customize memes using random images and text. The application uses a combination of HTML, CSS, and JavaScript to provide a user-friendly interface for creating and sharing memes.
+Random meme generator is a web application that allows users to create and customize memes using random images and text. The application uses a combination of HTML, CSS, and JavaScript to provide a user-friendly interface for creating and sharing memes.
 
 ## Technologies Used
 
