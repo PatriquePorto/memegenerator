@@ -7,10 +7,7 @@ Random meme generator is a web application that allows users to create and custo
 ## Technologies Used
 
 * **Front-end**: HTML5, CSS3, and JavaScript (ES6+)
-* **Back-end**: None (client-side only)
 * **APIs**: The Cat API, Dog API, Imgflip API, and Unsplash API (for image sourcing)
-* **Libraries**: None
-* **Frameworks**: None
 
 ## Features
 
