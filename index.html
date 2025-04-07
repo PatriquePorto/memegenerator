@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Memes Aleatórios</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerador de Memes</h1>
+        <p class="description">Crie memes personalizados com imagens aleatórias ou suas próprias fotos</p>
+    </header>
+    
+    <div class="meme-container">
+        <div class="meme-image-container">
+            <img src="/api/placeholder/500/375" alt="Imagem para meme" class="meme-image" id="meme-image">
+            <div class="loading-overlay" id="loading-overlay">Carregando imagem...</div>
+            <div class="meme-text text-top" id="text-top">TEXTO SUPERIOR</div>
+            <div class="meme-text text-bottom" id="text-bottom">TEXTO INFERIOR</div>
+        </div>
+    </div>
+    
+    <div class="controls">
+        <div class="control-group">
+            <label for="top-text">Texto Superior:</label>
+            <input type="text" id="top-text" value="TEXTO SUPERIOR">
+        </div>
+        
+        <div class="control-group">
+            <label for="bottom-text">Texto Inferior:</label>
+            <input type="text" id="bottom-text" value="TEXTO INFERIOR">
+        </div>
+        
+        <div class="image-upload-container">
+            <div class="upload-title">Escolha a fonte da imagem:</div>
+            
+            <div class="upload-option">
+                <input type="radio" id="api-option" name="image-source" value="api" checked class="radio-option">
+                <label for="api-option">Usar imagens aleatórias</label>
+            </div>
+            
+            <div class="upload-option">
+                <input type="radio" id="upload-option" name="image-source" value="upload" class="radio-option">
+                <label for="upload-option">Usar minha própria imagem</label>
+            </div>
+            
+            <div id="api-selection" class="control-group">
+                <label for="theme-select">Escolha um tema:</label>
+                <select id="theme-select">
+                    <option value="random">Aleatório</option>
+                    <option value="cats">Gatos</option>
+                    <option value="dogs">Cães</option>
+                    <option value="memes">Memes Clássicos</option>
+                    <option value="images">Imagens Aleatórias</option>
+                    <option value="funnyImages">Imagens Divertidas</option>
+                </select>
+            </div>
+            
+            <div id="upload-controls" style="display: none;" class="control-group">
+                <label for="image-upload">Enviar imagem:</label>
+                <div class="file-input-wrapper">
+                    <div class="file-input-button">Escolher arquivo</div>
+                    <input type="file" id="image-upload" accept="image/*" class="file-input">
+                </div>
+                <span id="file-name" class="selected-file-name">Nenhum arquivo selecionado</span>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button class="generate-btn" id="generate-btn">Gerar Novo Meme</button>
+            <button class="download-btn" id="download-btn">Salvar</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Patrique Porto. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>
